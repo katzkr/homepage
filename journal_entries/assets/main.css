@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'JuliaMono';
+  src: url('./assets/fonts/JuliaMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    background: #3d3f5c;
+}
+
+* {
+  font-family: 'JuliaMono', monospace;
+  color: white
+}
+
+h1 {
+    font-size: 12pt;
+    font-weight: normal;
+    padding-bottom: 30pt;
+    border-bottom: 2px solid #151625;
+    padding-left: 10pt;
+    text-align: center;
+}
+
+h2 {
+    font-size: 12pt;
+    font-weight: normal;
+}
+
+.column1 {
+    float: left;
+    width: 350px;
+    margin: 10px;
+    padding-right: 20px;
+    text-align: right;
+}
+
+.column2 {
+  float: left;
+  width: 600px;
+  height: 800px;
+  margin: 10px;
+  padding-left: 40px;
+  border-left: 2px solid #151625;
+}
