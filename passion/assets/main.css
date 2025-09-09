@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'JuliaMono';
+  src: url('./assets/fonts/JuliaMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    background: #3a3935;
+}
+
+* {
+  font-family: 'JuliaMono', monospace;
+}
+
+h1 {
+    color: #ffe609;
+    font-size: 12pt;
+    font-weight: normal;
+}
+
+h2 {
+    color: #f12547;
+    font-size: 12pt;
+    font-weight: normal;
+}
+
+p {
+    color: #dfd3c5;
+    font-size: 12pt;
+    font-weight: light;
+}
+
+li:hover {
+    color:#4357c8
+}
+
+.sticky {
+    position: sticky;
+    top: 0px;
+}
+
+.menu {
+    list-style: none;
+    position: sticky;
+    display: block;
+    justify-content: space-around;
+    padding: 8px;
+    gap: 10px;
+    border-radius: 5px;
+    box-shadow:
+        0px 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+li {
+    color: #dfd3c5;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 12pt;
+    font-weight: light;
+}
+
+.column1 {
+    float: left;
+    position: sticky;
+    width: 200px;
+    margin: 10px;
+    padding-right: 20px;
+    border-right: 1px solid #dfd3c5;
+    border-bottom: 1px solid #dfd3c5;
+}
+
+.column2 {
+    float: left;
+    width: 700px;
+    margin: 50px;
+    padding-left: 100px;
+}
+
+.column3 {
+    float: right;
+    width: 100px;
+    margin: 10px;
+}

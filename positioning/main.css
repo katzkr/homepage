@@ -1,0 +1,114 @@
+body {
+    background: #fad2d8;
+}
+
+img {
+    max-width:100%;
+}
+
+.block {
+    background:#ebb000;
+    margin:10px;
+    padding:10px;
+}
+
+.inline {
+    background: #e2639e;
+    /* for inline elements, margin and padding don't function like they do with block elements */
+    margin:10px;
+    padding:10px;
+
+    /* width and height have no effect on inline elements */
+    width:100px;
+    height:100px;
+}
+
+.inline-block {
+    background: #aa6cc3;
+    display:inline-block;
+    margin:10px;
+    padding:10px;
+
+    /* unlike inline, inline-block can be given width and height */
+    width:100px;
+    height:100px;
+}
+
+.content-box {
+    background:orangered;
+    padding:40px;
+    border:5px solid #ebb000;
+    margin:100px;
+    
+    width:200px;
+    height:200px;
+}
+
+.border-box {
+    background:orangered;
+    padding:40px;
+    border:5px solid #ebb000;
+    margin:100px;
+    
+    width:200px;
+    height:200px;
+
+    /* border-box includes the padding and border sizes in the total width and height of the element */
+    box-sizing:border-box;
+}
+
+.square {
+    background:honeydew;
+    width:100px;
+    height:100px;
+    margin:10px;
+}
+
+.relative {
+    background:#e2639e;
+    position:relative;
+
+    /* cannot be left AND right, nor can it be top AND bottom -- you must select one for each direction */
+    top:100px;
+    left:20px;
+}
+
+.fixed {
+    background:#aa6cc3;
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    margin:10;
+}
+
+.sticky {
+    background:#ebb000;
+    position:sticky;
+    bottom:0px;
+}
+
+.absolute {
+    background:orangered;
+    position:absolute;
+    top:1200px;
+    right:50px;
+}
+
+.smiley {
+    background:#e2639e;
+    width:200px;
+    height:200px;
+    margin:50px;
+    position:relative;
+}
+
+.eye {
+    background:#fad2d8;
+    width:30px;
+    height:30px;
+
+    /* in order for this element to be positioned relative to its container, the container also needs to have a position value */
+    position:absolute;
+    left:50px;
+    top:50px;
+}
