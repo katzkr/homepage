@@ -60,6 +60,22 @@ li {
     font-weight: light;
 }
 
+a {
+    color:#dfd3c5;
+    text-decoration:none;
+    font-weight: normal;
+}
+
+a:hover {
+    color:#4357c8
+}
+
+.caption {
+    color: #dfd3c5;
+    font-size: 8pt;
+    font-weight: light;
+}
+
 .column1 {
     float: left;
     position: sticky;
