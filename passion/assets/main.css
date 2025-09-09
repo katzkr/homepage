@@ -31,13 +31,13 @@ p {
     font-weight: light;
 }
 
-li:hover {
-    color:#4357c8
-}
-
 .sticky {
     position: sticky;
     top: 0px;
+}
+
+li:hover {
+    color:#4357c8
 }
 
 .menu {
