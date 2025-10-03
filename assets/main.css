@@ -13,11 +13,15 @@ img {
 h1 {
     font-family:'Inter Tight', sans-serif;
     font-weight:900;
-    font-size: 20px;
+    font-size:20px;
+
+    margin:10px;
 }
 
 .projects {
     font-family:'Inter Tight', sans-serif;
     font-weight:500;
-    font-size: 10px;
+    font-size:10px;
+
+    margin:20px;
 }
