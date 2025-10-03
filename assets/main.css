@@ -4,24 +4,42 @@
 
 body {
     margin:0;
+    background:#ffffff;
 }
 
 img {
     max-width:100%;
 }
 
-h1 {
-    font-family:'Inter Tight', sans-serif;
-    font-weight:900;
-    font-size:20px;
+.head {
+    font-family:'Inter', sans-serif;
+    font-weight:700;
+    font-size:35px;
 
-    margin:30px;
+    padding-left:20px;
+    margin-top:40px;
+
+    color:#ff3131;
 }
 
 .list {
-    font-family:'Inter Tight', sans-serif;
+    font-family:'Inter', sans-serif;
     font-weight:500;
-    font-size:18px;
+    font-size:20px;
 
-    margin:80px;
+    margin:35px;
+}
+
+a {
+    color:#000000;
+    text-decoration:none;
+}
+
+a:hover {
+    color:#ff0000;
+    transition:.7s;
+}
+
+i {
+    font-weight:300;
 }
