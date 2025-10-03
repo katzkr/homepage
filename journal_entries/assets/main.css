@@ -1,12 +1,15 @@
 @font-face {
   font-family: 'JuliaMono';
-  src: url('./assets/fonts/JuliaMono-Regular.ttf') format('truetype');
-  font-weight: normal;
+  src: url('./assets/fonts/JuliaMono-Light.ttf') format('truetype');
+  font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 body {
-    background: #3d3f5c;
+  background: #3d3f5c;
+  font-size:10pt;
+  font-weight:300;
 }
 
 * {
@@ -15,25 +18,24 @@ body {
 }
 
 h1 {
-    font-size: 12pt;
-    font-weight: normal;
-    padding-bottom: 30pt;
-    border-bottom: 2px solid #151625;
-    padding-left: 10pt;
-    text-align: center;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #151625;
+  padding-left: 10px;
+  text-align: center;
+  font-weight: 600;
 }
 
 h2 {
-    font-size: 12pt;
-    font-weight: normal;
+  font-size: 10pt;
+  font-weight: 300;
 }
 
 .column1 {
-    float: left;
-    width: 350px;
-    margin: 10px;
-    padding-right: 20px;
-    text-align: right;
+  float: left;
+  width: 350px;
+  margin: 10px;
+  padding-right: 20px;
+  text-align: right;
 }
 
 .column2 {
