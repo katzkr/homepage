@@ -82,7 +82,7 @@ html, body {
   
   font-size: 20px;
   cursor: pointer;
-  background-color: #ade6ed;
+  background-color: #f2efed;
   color: #3a39ff;
   padding: 13px 18px;
   border: none;
@@ -130,10 +130,10 @@ html, body {
     height: 100vh;
     padding: 25px;
     margin: 10px;
-    z-index: -10;
 }
 
 .panel {
+    position: relative;
     display: flex;
     flex: 0 0 200vw;
     height: 100vh;
@@ -152,7 +152,6 @@ html, body {
     color: black;
     gap: 20px;
     padding: 20px;
-    margin-left: 25px;
     z-index: 10;
     cursor: pointer;
     animation: arrow 1.5s ease-in-out infinite;
@@ -200,12 +199,8 @@ html, body {
 }
 
 .one {
-    width: 185px;
+    width: 215px;
     height: 80px;
-    /* border-color: #3a39ff;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 2px; */
 
     display: flex;
     justify-content: flex-end; 
@@ -214,27 +209,110 @@ html, body {
     color: black;
     gap: 20px;
     padding: 20px;
-    margin-left: 600px;
+    margin-left: 640px;
     z-index: 10;
 }
 
 .two {
-    width: 250px;
-    height: 250px;
-    overflow-x: hidden;
-    rotate: -90deg;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 100vw;
 
-    background-color:#f2bb06;
+    background-color: #dcb8fe;
+    color: #f2efed;
+    font-size: 120px;
 
     display: flex;
-    justify-content: flex-start; 
-    justify-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250px;
+
+    transform: rotate(-90deg);
+    transform-origin: center;
+    translate: -670px 0;
+    z-index: 40;
+}
+
+.three {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 100vw;
+
+    background-color: #ade6ed;
+    color: #f2efed;
+    font-size: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-right: 10px;
+
+    transform: rotate(-90deg);
+    transform-origin: center;
+    translate: -670px 0;
+    z-index: 40;
+}
+
+.four {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 100vw;
+
+    background-color: #3a39ff;
+    color: #f2efed;
+    font-size: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+    transform: rotate(-90deg);
+    transform-origin: center;
+    translate: -670px 0;
+    z-index: 40;
+}
+
+.five {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 100vw;
+
+    background-color: #f2bb06;
+    color: #f2efed;
+    font-size: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+    transform: rotate(-90deg);
+    transform-origin: center;
+    translate: -670px 0;
+    z-index: 40;
+}
+
+.six {
+    width: 167px;
+    height: 80px;
+
+    display: flex;
+    justify-content: flex-end; 
+    justify-items: center;
     text-align: center;
     color: black;
     gap: 20px;
     padding: 20px;
-    margin-left: -100vw;
+    margin-left: 1200px;
     z-index: 10;
-
-    font-size: 70px;
 }
