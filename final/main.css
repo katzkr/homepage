@@ -142,6 +142,16 @@ html, body {
     align-items:center;
 }
 
+.panel2 {
+    position: relative;
+    display: flex;
+    flex: 0 0 300vw;
+    height: 100vh;
+    padding: 20px;
+
+    align-items:center;
+}
+
 .arrow {
     display: flex;
     justify-content: flex-end;
