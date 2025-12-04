@@ -1,0 +1,240 @@
+* {
+    box-sizing:border-box;
+}
+
+img {
+    max-width: 100%;
+    width: 1300px;
+    height: auto;
+    z-index: -10;
+    margin-bottom: 100px;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("/fonts/Helvetica.woff2") format("woff2"),
+       url("/fonts/Helvetica.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1 {
+    font-family: "Helvetica", Arial, sans-serif;
+    letter-spacing: -0.04em;
+    font-size: 50pt;
+}
+
+body {
+    font-family: "Helvetica", Arial, sans-serif;
+    letter-spacing: -0.04em;
+    font-size: 12pt;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: #f2efed;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 24px;
+  color: #3a39ff;
+  display: block;
+  transition: 0.4s ease;
+}
+
+.sidebar a:hover {
+  color: #ade6ed;
+  font-size: 26px;
+  transition: color .2s ease-in;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  position: fixed; 
+  top: 30px;
+  left: 30px;
+  
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #ade6ed;
+  color: #3a39ff;
+  padding: 13px 18px;
+  border: none;
+  z-index: 998;
+}
+
+.openbtn:hover {
+  background-color: #3a39ff;
+  color: #ade6ed;
+  border-radius: 15px;
+  transition: color .2s ease-in;
+  transition: border-radius .2s ease-in-out;
+}
+
+#main {
+  transition: margin-left .7s ease-in-out;
+  padding: 16px;
+}
+
+::-webkit-scrollbar {
+    height: 10px;
+    border-radius: 100px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f2efed;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ade6ed;
+    border-radius: 100px;
+    transition: background-color 1s ease-in-out;   /* ← added here */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #3a39ff;
+}
+
+.horizontal-container {
+    display: flex;
+    width: 200vw;
+    height: 100vh;
+    padding: 25px;
+    margin: 10px;
+    z-index: -10;
+}
+
+.panel {
+    display: flex;
+    flex: 0 0 200vw;
+    height: 100vh;
+    padding: 20px;
+
+    align-items:center;
+}
+
+.arrow {
+    display: flex;
+    justify-content: flex-end;
+    justify-items: center;
+    font-size: 70pt;
+
+    text-align: center;
+    color: black;
+    gap: 20px;
+    padding: 20px;
+    margin-left: 25px;
+    z-index: 10;
+    cursor: pointer;
+    animation: arrow 1.5s ease-in-out infinite;
+}
+
+.arrow:hover {
+    color: #dcb8fe;
+    transition: color .3s ease-in-out;
+}
+
+@keyframes arrow {
+    0%{
+        translate:0px;
+    }
+    5%{
+        translate:5px;
+    }
+    10%{
+        translate:15px;
+    }
+    20%{
+        translate:25px;
+    }
+    30%{
+        translate:34px;
+    }
+    50%{
+        translate:40px;
+    }
+    70%{
+        translate:34px;
+    }
+    80%{
+        translate:25px;
+    }
+    90%{
+        translate:15px;
+    }
+    95%{
+        translate:5px;
+    }
+    100%{
+        translate:0px;
+    }
+}
+
+.one {
+    width: 185px;
+    height: 80px;
+    /* border-color: #3a39ff;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px; */
+
+    display: flex;
+    justify-content: flex-end; 
+    justify-items: center;
+    text-align: center;
+    color: black;
+    gap: 20px;
+    padding: 20px;
+    margin-left: 600px;
+    z-index: 10;
+}
+
+.two {
+    width: 250px;
+    height: 250px;
+    overflow-x: hidden;
+    rotate: -90deg;
+
+    background-color:#f2bb06;
+
+    display: flex;
+    justify-content: flex-start; 
+    justify-items: flex-start;
+    text-align: center;
+    color: black;
+    gap: 20px;
+    padding: 20px;
+    margin-left: -100vw;
+    z-index: 10;
+
+    font-size: 70px;
+}

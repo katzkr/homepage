@@ -1,0 +1,109 @@
+body {
+    margin:0%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.instructions {
+    margin-right:100px;
+    margin-left:-250px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#keyboard {
+    background-color: hsl(250, 25%, 20%);
+    border-radius:15px;
+    max-width:350px;
+    overflow:hidden;
+    z-index: 1000;
+}
+
+#display {
+    width:90%;
+    height:70px;
+    padding:20px;
+    font-size:10px;
+    text-align:right;
+    border:none;
+    background-color:hsl(250, 25%, 35%);
+    color:white;
+    font-family:monospace;
+    font-size:50px;
+}
+
+#keys {
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:15px;
+    padding:30px;
+    margin-left:10px;
+}
+
+button {
+    width:70px;
+    height:70px;
+    border-radius:20px;
+    border:none;
+    background-color: hsl(250, 25%, 40%);
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.15s ease;
+    font-family:monospace;
+}
+
+button:hover {
+    background-color:hsl(250, 25%, 30%);
+}
+
+button:active {
+    background-color:hsl(250, 25%, 45%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+    transform: translateY(2px);
+}
+
+.operator-btn {
+    background-color:#EE3D24;
+}
+
+.operator-btn:hover {
+    background-color:#F68A16;
+}
+
+.operator-btn:active {
+    background-color:#FAB00F;
+}
+
+#confetti {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1500px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1.0s;
+    z-index: 0;
+}
+
+#blackout {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background-color:black;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Helvetica, Arial, sans-serif;
+    opacity:0;
+    pointer-events:none;
+    z-index:2000;
+}

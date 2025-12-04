@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>control</title>
+        <link rel="stylesheet" href="main.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        
+        <div class="instructions">hm, what's the passcode?</div>
+
+        <div id="keyboard">
+            <input id="display" readonly>
+            <div id="keys">
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="clearDisplay()" class="operator-btn">C</button>
+                <button onclick="checkCode()" class="operator-btn">↵</button>
+            </div>
+
+        </div>
+
+        <div id="blackout">
+            <p>definitely not that one...</p>
+        </div>
+   
+        <img id="confetti" src="confetti.gif" alt="confetti celebration">
+        <script src="index.js"></script>
+
+    </body>
+</html>
+
+  <!-- <div id="keys">
+                <button onclick="appendToDisplay('A')">A</button>
+                <button onclick="appendToDisplay('B')">B</button>
+                <button onclick="appendToDisplay('C')">C</button>
+                <button onclick="appendToDisplay('D')">D</button>
+                <button onclick="appendToDisplay('E')">E</button>
+                <button onclick="appendToDisplay('F')">F</button>
+                <button onclick="appendToDisplay('G')">G</button>
+                <button onclick="appendToDisplay('H')">H</button>
+                <button onclick="appendToDisplay('I')">I</button>
+                <button onclick="appendToDisplay('J')">J</button>
+                <button onclick="appendToDisplay('K')">K</button>
+                <button onclick="appendToDisplay('L')">L</button>
+                
+                <button onclick="appendToDisplay('M')">M</button>
+                <button onclick="appendToDisplay('N')">N</button>
+                <button onclick="appendToDisplay('O')">O</button>
+                <button onclick="appendToDisplay('P')">P</button>
+                <button onclick="appendToDisplay('Q')">Q</button>
+                <button onclick="appendToDisplay('R')">R</button>
+                <button onclick="appendToDisplay('S')">S</button>
+                <button onclick="appendToDisplay('T')">T</button>
+                <button onclick="appendToDisplay('U')">U</button>
+                <button onclick="appendToDisplay('V')">V</button>
+                <button onclick="appendToDisplay('W')">W</button>
+                <button onclick="appendToDisplay('X')">X</button>
+                
+                <button onclick="appendToDisplay('Y')">Y</button>
+                <button onclick="appendToDisplay('Z')">Z</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('0')">0</button>
+
+                <button onclick="clearDisplay()" class="operator-btn">←</button>
+                <button onclick="appendToDisplay('!')">!</button>
+                <button onclick="appendToDisplay('?')">?</button>
+                <button onclick="appendToDisplay('.')">.</button>
+                <button onclick="appendToDisplay(',')">,</button>
+                <button onclick="appendToDisplay(' ')">__</button>
+                <button onclick="appendToDisplay('*')">*</button>
+                <button onclick="appendToDisplay('/')">/</button>
+                <button onclick="appendToDisplay('$')">$</button>
+                <button onclick="appendToDisplay('%')">%</button>
+                <button onclick="appendToDisplay('&')">&</button>
+                <button onclick="clearDisplay()" class="operator-btn">←</button>
+            </div> -->

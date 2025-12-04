@@ -1,0 +1,58 @@
+* {
+    box-sizing:border-box;
+}
+
+body {
+    background:#a0a0b0;
+}
+
+.dark {
+    background:#60606f;
+
+    transition:1s;
+}
+
+img {
+    max-width:100%;
+}
+
+.menu {
+    background: #60606f;
+    position:fixed;
+    top:0;
+    right:0;
+    right:-200px;
+    padding:20px;
+    width:200px;
+    height:100vh;
+    text-align: center;
+    font-size:150%;
+
+    transition: all .3s;
+}
+
+.active {
+  right:0;
+}
+
+.gear {
+    width:70px;
+    height:70px;
+    background:#60606f;
+
+    position:fixed;
+    bottom:30px;
+    left:30px;
+
+    transition: all .3s;
+}
+
+.spin {
+    rotate:180deg;
+}
+
+.glow {
+    background:#c1ed88;
+
+    transition:1s;
+}

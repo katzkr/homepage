@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>a little italy</title>
+        <link rel="stylesheet" href="main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div class="horizontal-container">
+            <div class="panel" id="ciao">
+                <img src="./assets/homepage.jpg">
+                <div class="arrow">➔</div>
+                <div class="one"> a scrollable storybook [ fall 2024 ]</div>
+            </div>
+
+            <div class="panel" id="florence"></div>
+                <div class="two">florence</div>
+
+            <div class="panel" id="portovenere">portovenere</div>
+
+            <div class="panel" id="amalfi">amalfi coast</div>
+
+            <div class="panel" id="oktoberfest">oktoberfest</div>
+
+        </div>
+
+
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">✕</a>
+            <a href="#ciao" class="nav-link">ciao!</a>
+            <a href="#florence" class="nav-link">florence</a>
+            <a href="#portovenere" class="nav-link">portovenere</a>
+            <a href="#amalfi" class="nav-link">amalfi coast</a>
+            <a href="#oktoberfest" class="nav-link">oktoberfest</a>
+        </div>
+
+        
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">≡</button>
+        </div>
+
+        <script>
+            function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            }
+
+            function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+            }
+            
+            document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+            closeNav();
+            });
+        });
+        </script>
+    </body>
+</html>
